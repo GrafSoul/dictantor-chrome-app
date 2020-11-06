@@ -1,13 +1,17 @@
-import './App.css';
+import React from 'react';
 
-function App() {
+import DictReader from './DictReader/DictReader';
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+
+const App = () => {
     return (
-        <div className="App">
-            <header className="App-header">
-                <p>Dictantor</p>
-            </header>
-        </div>
+        <>
+            <Header />
+            <DictReader />
+            <Footer />
+        </>
     );
-}
+};
 
 export default App;
