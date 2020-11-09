@@ -1,0 +1,95 @@
+/* RESET */
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+a:active,
+a:focus {
+    outline: none;
+}
+
+input,
+textarea {
+    outline: none;
+}
+
+input:active,
+textarea:active {
+    outline: none;
+}
+
+:focus {
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+textarea {
+    resize: horizontal;
+}
+
+button:active,
+button:focus {
+    outline: none !important;
+}
+
+button::-moz-focus-inner {
+    border: 0 !important;
+}
+
+::selection {
+    background-color: transparent;
+}
+
+textarea::selection {
+    background-color: #b8c3da;
+}
+
+/* FONTS */
+@font-face {
+    font-family: 'SFUIText';
+    src: asset-url('./App/fonts/SFProDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'SFUIText';
+    src: asset-url('./App/fonts/SFUIText-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'SFUIProDisplay';
+    src: asset-url('./App/fonts/SFProDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'SFUIProDisplay';
+    src: asset-url('./App/fonts/SFProDisplay-Bold.ttf') format('truetype');
+    font-weight: bold;
+}
+
+/* BASE STYLES */
+html,
+body {
+    background-color: rgb(0, 58, 57);
+}
+
+body {
+    font-family: "SFUIText", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.7;
+    overflow: hidden;
+}

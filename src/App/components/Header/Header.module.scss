@@ -1,0 +1,67 @@
+.header {
+	padding: 0;
+	position: relative;
+	z-index: 2000;
+	-webkit-user-select: none;
+	background-color: rgb(1, 47, 47);
+	overflow: hidden;
+
+	.topBar {
+		display: flex;
+		margin: 0;
+		padding: 0 0 0 5px;
+		flex-direction: row;
+		justify-content: space-between;
+		background-color:rgb(1, 47, 47);
+		-webkit-app-region: drag;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 10;
+		transition: all 0.3s ease;
+	}
+
+	.title {
+		margin: 5px 0 0;
+		font-family: "SFUIProDisplay", sans-serif;
+		font-size: 1em;
+		font-weight: normal;
+		color: rgb(212, 212, 212);
+
+		.version {
+			font-size: .8em;
+		}
+
+		.logo{
+			display: inline-block;
+			margin-top: 3px;
+			margin-right: 3px;
+			margin-bottom: -2px;
+		}
+	}
+
+
+	.btnWindow,
+	.closeWindow {
+		font-size: 1em;
+		margin: 0;
+		padding: 10px 10px;
+		cursor: pointer;
+		-webkit-app-region: no-drag;
+		background-color: rgb(1, 47, 47);
+		color: rgb(212, 212, 212);;
+		border: none;
+		outline: none;
+		transition: all 0.3s ease;
+
+		&:hover {
+			color: rgb(255, 255, 255);
+			background-color:rgb(0, 116, 114);
+		}
+	}
+
+	.closeWindow:hover {
+		background-color: #f50a3d !important;
+	}
+}
