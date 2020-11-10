@@ -9,6 +9,7 @@ const ControlContent = ({
     copyLink,
     isCopied,
     eraseText,
+    settingsModal,
 }) => {
     return (
         <div className={classes.controlButtons}>
@@ -31,7 +32,7 @@ const ControlContent = ({
                 disabled={!text ? true : false}
                 className={[
                     classes.button,
-                    !text ? classes.disabled : null,
+                    isRecord || !text ? classes.disabled : null,
                     isCopied ? classes.copy : null,
                 ].join(' ')}
                 onClick={copyLink}
@@ -48,12 +49,21 @@ const ControlContent = ({
                 disabled={!text ? true : false}
                 className={[
                     classes.button,
-                    !text ? classes.disabled : null,
+                    isRecord || !text ? classes.disabled : null,
                 ].join(' ')}
                 onClick={(e) => eraseText(e)}
                 title="Erase text"
             >
                 <i className="fal fa-eraser"></i>
+            </button>
+
+            <button
+                className={classes.button}
+                onClick={(e) => settingsModal(e)}
+                title="Settings"
+            >
+                {/* <i className="fal fa-cog"></i> */}
+                <i className="fal fa-language"></i>
             </button>
         </div>
     );
