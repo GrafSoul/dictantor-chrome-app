@@ -4,8 +4,8 @@ chrome.app.runtime.onLaunched.addListener(function () {
         innerBounds: {
             width: 600,
             height: 450,
-            minWidth: 340,
-            minHeight: 230,
+            minWidth: 360,
+            minHeight: 280,
         },
         frame: 'none',
     });
